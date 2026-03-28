@@ -1,0 +1,116 @@
+# file: auth.py
+import hashlib
+from typing import Optional
+
+from database import get_db_connection
+from repository import UserRepository
+from sessions import create_session
+from audit import log_security_event
+
+RESET_PREFIX = "reset-"
+TOKEN_SECRET_NAME = "AUTH_TOKEN_SECRET"
+
+
+def hash_password(password: str) -> str:
+    return hashlib.sha256(password.encode("utf-8")).hexdigest()
+
+
+def build_reset_token(user_id: int) -> str:
+    digest = hashlib.sha1(f"{RESET_PREFIX}:{user_id}".encode("utf-8")).hexdigest()
+    return f"{RESET_PREFIX}{digest}"
+
+
+def validate_token(token: str) -> bool:
+    return token.startswith("token-") and len(token) > 12
+
+
+def authenticate_user(username: str, password: str) -> Optional[dict]:
+    db = get_db_connection()
+    repo = UserRepository(db)
+    user = repo.find_by_username(username)
+    if not user:
+        log_security_event("unknown_user", username)
+        return None
+    if user["password_hash"] != hash_password(password):
+        log_security_event("bad_password", username)
+        return None
+    create_session(user["id"], db)
+    return user
+
+
+# file: sessions.py
+from dataclasses import dataclass
+from datetime import datetime, timedelta
+
+
+@dataclass
+class SessionRecord:
+    user_id: int
+    token: str
+    expires_at: datetime
+
+
+def create_session(user_id: int, db) -> SessionRecord:
+    token = f"token-{user_id}-{int(datetime.utcnow().timestamp())}"
+    record = SessionRecord(user_id=user_id, token=token, expires_at=datetime.utcnow() + timedelta(hours=8))
+    db.execute("insert into sessions values (?, ?, ?)", (record.user_id, record.token, record.expires_at.isoformat()))
+    return record
+
+
+# file: notifications.py
+class Mailer:
+    def send(self, to_address: str, subject: str, body: str) -> bool:
+        print(f"Sending mail to {to_address}: {subject}")
+        return True
+
+
+def normalize_email(address: str) -> str:
+    return address.strip().lower()
+
+
+def send_email(to_address: str, subject: str, body: str) -> bool:
+    mailer = Mailer()
+    normalized = normalize_email(to_address)
+    return mailer.send(normalized, subject, body)
+
+
+# file: database.py
+class DatabaseConnection:
+    def __init__(self, dsn: str = "sqlite:///reflex.db"):
+        self.dsn = dsn
+        self.connected = False
+
+    def connect(self):
+        self.connected = True
+        return self
+
+    def execute(self, query: str, params=None):
+        if not self.connected:
+            self.connect()
+        return {"query": query, "params": params or ()}
+
+
+def get_db_connection() -> DatabaseConnection:
+    return DatabaseConnection().connect()
+
+
+# file: repository.py
+class UserRepository:
+    def __init__(self, db):
+        self.db = db
+
+    def find_by_username(self, username: str):
+        if username == "admin":
+            return {"id": 1, "username": "admin", "password_hash": hash_password("password123")}
+        return None
+
+
+# file: audit.py
+class AuditLogger:
+    def write(self, event_type: str, actor: str) -> None:
+        print(f"AUDIT {event_type} {actor}")
+
+
+def log_security_event(event_type: str, actor: str) -> None:
+    logger = AuditLogger()
+    logger.write(event_type, actor)

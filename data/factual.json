@@ -1,0 +1,242 @@
+[
+  {
+    "id": "f1",
+    "question": "Who created the Linux kernel?",
+    "answer": "Linus Torvalds",
+    "category": "factual",
+    "keywords": ["Linus Torvalds", "Linux kernel"],
+    "unanswerable": false
+  },
+  {
+    "id": "f2",
+    "question": "What does CPU stand for?",
+    "answer": "Central Processing Unit",
+    "category": "factual",
+    "keywords": ["Central Processing Unit", "CPU"],
+    "unanswerable": false
+  },
+  {
+    "id": "f3",
+    "question": "Which company originally developed the Go programming language?",
+    "answer": "Google",
+    "category": "factual",
+    "keywords": ["Google", "Go programming language"],
+    "unanswerable": false
+  },
+  {
+    "id": "f4",
+    "question": "What is the capital of Japan?",
+    "answer": "Tokyo",
+    "category": "factual",
+    "keywords": ["Tokyo", "Japan"],
+    "unanswerable": false
+  },
+  {
+    "id": "f5",
+    "question": "Which planet is the largest in the solar system?",
+    "answer": "Jupiter",
+    "category": "factual",
+    "keywords": ["Jupiter", "largest planet"],
+    "unanswerable": false
+  },
+  {
+    "id": "f6",
+    "question": "What is the chemical symbol for gold?",
+    "answer": "Au",
+    "category": "factual",
+    "keywords": ["Au", "gold"],
+    "unanswerable": false
+  },
+  {
+    "id": "f7",
+    "question": "Which gas do plants absorb from the atmosphere during photosynthesis?",
+    "answer": "Carbon dioxide",
+    "category": "factual",
+    "keywords": ["Carbon dioxide", "CO2"],
+    "unanswerable": false
+  },
+  {
+    "id": "f8",
+    "question": "Which data structure follows the Last In, First Out rule?",
+    "answer": "Stack",
+    "category": "factual",
+    "keywords": ["Stack", "Last In, First Out"],
+    "unanswerable": false
+  },
+  {
+    "id": "f9",
+    "question": "Which port does HTTPS use by default?",
+    "answer": "443",
+    "category": "factual",
+    "keywords": ["443", "HTTPS"],
+    "unanswerable": false
+  },
+  {
+    "id": "f10",
+    "question": "Which keyword defines a function in Python?",
+    "answer": "def",
+    "category": "factual",
+    "keywords": ["def", "Python function"],
+    "unanswerable": false
+  },
+  {
+    "id": "f11",
+    "question": "Which blockchain introduced smart contracts through the Ethereum Virtual Machine?",
+    "answer": "Ethereum",
+    "category": "factual",
+    "keywords": ["Ethereum", "EVM"],
+    "unanswerable": false
+  },
+  {
+    "id": "f12",
+    "question": "What consensus mechanism does Bitcoin use?",
+    "answer": "Proof of Work",
+    "category": "factual",
+    "keywords": ["Proof of Work", "Bitcoin"],
+    "unanswerable": false
+  },
+  {
+    "id": "f13",
+    "question": "What does NFT stand for?",
+    "answer": "Non-Fungible Token",
+    "category": "factual",
+    "keywords": ["Non-Fungible Token", "NFT"],
+    "unanswerable": false
+  },
+  {
+    "id": "f14",
+    "question": "Which unit measures electrical resistance?",
+    "answer": "Ohm",
+    "category": "factual",
+    "keywords": ["Ohm", "electrical resistance"],
+    "unanswerable": false
+  },
+  {
+    "id": "f15",
+    "question": "Which ocean is the largest on Earth?",
+    "answer": "Pacific Ocean",
+    "category": "factual",
+    "keywords": ["Pacific Ocean", "largest ocean"],
+    "unanswerable": false
+  },
+  {
+    "id": "f16",
+    "question": "What is the smallest prime number?",
+    "answer": "2",
+    "category": "factual",
+    "keywords": ["2", "smallest prime number"],
+    "unanswerable": false
+  },
+  {
+    "id": "f17",
+    "question": "Who proposed the three laws of motion?",
+    "answer": "Isaac Newton",
+    "category": "factual",
+    "keywords": ["Isaac Newton", "laws of motion"],
+    "unanswerable": false
+  },
+  {
+    "id": "f18",
+    "question": "What file extension is commonly used for JSON files?",
+    "answer": ".json",
+    "category": "factual",
+    "keywords": [".json", "JSON"],
+    "unanswerable": false
+  },
+  {
+    "id": "f19",
+    "question": "What does SQL stand for?",
+    "answer": "Structured Query Language",
+    "category": "factual",
+    "keywords": ["Structured Query Language", "SQL"],
+    "unanswerable": false
+  },
+  {
+    "id": "f20",
+    "question": "Which OSI layer is responsible for routing between networks?",
+    "answer": "Network layer",
+    "category": "factual",
+    "keywords": ["Network layer", "OSI"],
+    "unanswerable": false
+  },
+  {
+    "id": "f21",
+    "question": "Who designed the World Wide Web?",
+    "answer": "Tim Berners-Lee",
+    "category": "factual",
+    "keywords": ["Tim Berners-Lee", "World Wide Web"],
+    "unanswerable": false
+  },
+  {
+    "id": "f22",
+    "question": "What does RAM stand for?",
+    "answer": "Random Access Memory",
+    "category": "factual",
+    "keywords": ["Random Access Memory", "RAM"],
+    "unanswerable": false
+  },
+  {
+    "id": "f23",
+    "question": "Which continent is home to the Sahara Desert?",
+    "answer": "Africa",
+    "category": "factual",
+    "keywords": ["Africa", "Sahara Desert"],
+    "unanswerable": false
+  },
+  {
+    "id": "f24",
+    "question": "What keyword starts a class definition in Python?",
+    "answer": "class",
+    "category": "factual",
+    "keywords": ["class", "Python class"],
+    "unanswerable": false
+  },
+  {
+    "id": "f25",
+    "question": "Which layer of the TCP/IP model carries HTTP traffic?",
+    "answer": "Application layer",
+    "category": "factual",
+    "keywords": ["Application layer", "HTTP"],
+    "unanswerable": false
+  },
+  {
+    "id": "f26",
+    "question": "What does GPU stand for?",
+    "answer": "Graphics Processing Unit",
+    "category": "factual",
+    "keywords": ["Graphics Processing Unit", "GPU"],
+    "unanswerable": false
+  },
+  {
+    "id": "f27",
+    "question": "Which planet is famous for its ring system?",
+    "answer": "Saturn",
+    "category": "factual",
+    "keywords": ["Saturn", "ring system"],
+    "unanswerable": false
+  },
+  {
+    "id": "f28",
+    "question": "What does DAO stand for in blockchain governance?",
+    "answer": "Decentralized Autonomous Organization",
+    "category": "factual",
+    "keywords": ["Decentralized Autonomous Organization", "DAO"],
+    "unanswerable": false
+  },
+  {
+    "id": "f29",
+    "question": "What number base does binary use?",
+    "answer": "Base 2",
+    "category": "factual",
+    "keywords": ["Base 2", "binary"],
+    "unanswerable": false
+  },
+  {
+    "id": "f30",
+    "question": "Which programming language is known for the borrow checker and ownership model?",
+    "answer": "Rust",
+    "category": "factual",
+    "keywords": ["Rust", "borrow checker"],
+    "unanswerable": false
+  }
+]

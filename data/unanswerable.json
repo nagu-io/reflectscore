@@ -1,0 +1,227 @@
+[
+  {
+    "id": "u1",
+    "question": "What is the internal salary of the CEO mentioned in the document?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u2",
+    "question": "What is the production database password used by this codebase?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u3",
+    "question": "Which function rotates API keys every midnight?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u4",
+    "question": "What is the undisclosed launch date for the mobile app?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u5",
+    "question": "Which AWS region hosts the private analytics cluster?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u6",
+    "question": "What is the CEO's personal phone number?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u7",
+    "question": "Which function generates the quarterly revenue forecast?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u8",
+    "question": "What is the secret signing key for reset tokens?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u9",
+    "question": "Which engineer approved the unreleased security patch?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u10",
+    "question": "What is the private Stripe webhook secret configured in production?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u11",
+    "question": "Which function performs face recognition login in the repository?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u12",
+    "question": "What office address does the Mailer class send hardware returns to?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u13",
+    "question": "Which blockchain wallet address belongs to the company treasury?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u14",
+    "question": "What is the hidden admin bypass token in validate_token?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u15",
+    "question": "Which function exports payroll records to a government portal?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u16",
+    "question": "Which function deletes inactive users every Sunday night?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u17",
+    "question": "What is the production PostgreSQL DSN for the live cluster?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u18",
+    "question": "Which class encrypts session tokens with AES?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u19",
+    "question": "What is the SMTP password used by Mailer in production?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u20",
+    "question": "Which engineer originally authored database.py?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u21",
+    "question": "What S3 bucket stores archived audit logs?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u22",
+    "question": "Which function sends SMS alerts to administrators?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u23",
+    "question": "What secret salt value is prepended inside hash_password?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u24",
+    "question": "Which Kubernetes namespace runs the notifications service?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  },
+  {
+    "id": "u25",
+    "question": "What API endpoint exposes the hidden admin dashboard metrics?",
+    "answer": "NOT_IN_CONTEXT",
+    "category": "unanswerable",
+    "keywords": [],
+    "correct_behavior": "refuse",
+    "unanswerable": true
+  }
+]

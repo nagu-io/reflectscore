@@ -1,0 +1,173 @@
+{
+  "baseline": {
+    "hallucination_rate": 0.22,
+    "hallucination_rate_ci": [
+      0.1,
+      0.34
+    ],
+    "grounding_score": 1.0,
+    "grounding_score_ci": [
+      1.0,
+      1.0
+    ],
+    "refusal_accuracy": 0.26666666666666666,
+    "refusal_accuracy_ci": [
+      0.058823529411764705,
+      0.5007352941176464
+    ],
+    "correction_rate": null,
+    "correction_rate_ci": null,
+    "backfire_rate": null,
+    "backfire_rate_ci": null,
+    "confidence_calibration": null,
+    "mean_response_time_seconds": 5.4125579699999795
+  },
+  "confidence_reflection": {
+    "hallucination_rate": 0.18,
+    "hallucination_rate_ci": [
+      0.08,
+      0.2804999999999996
+    ],
+    "grounding_score": 0.8,
+    "grounding_score_ci": [
+      0.5714285714285714,
+      1.0
+    ],
+    "refusal_accuracy": 0.4,
+    "refusal_accuracy_ci": [
+      0.15779352226720647,
+      0.6818779904306219
+    ],
+    "correction_rate": 0.02,
+    "correction_rate_ci": [
+      0.0,
+      0.06
+    ],
+    "backfire_rate": 0.0,
+    "backfire_rate_ci": [
+      0.0,
+      0.0
+    ],
+    "confidence_calibration": {
+      "0.8": 0.5714285714285714,
+      "1.0": 0.8604651162790697
+    },
+    "mean_response_time_seconds": 6.104534462000593
+  },
+  "cross_agent": {
+    "hallucination_rate": 0.18,
+    "hallucination_rate_ci": [
+      0.08,
+      0.28
+    ],
+    "grounding_score": 0.9333333333333333,
+    "grounding_score_ci": [
+      0.7777777777777778,
+      1.0
+    ],
+    "refusal_accuracy": 0.4,
+    "refusal_accuracy_ci": [
+      0.15384615384615385,
+      0.6666666666666666
+    ],
+    "correction_rate": 0.04,
+    "correction_rate_ci": [
+      0.0,
+      0.1
+    ],
+    "backfire_rate": 0.02,
+    "backfire_rate_ci": [
+      0.0,
+      0.06
+    ],
+    "confidence_calibration": null,
+    "mean_response_time_seconds": 21.793614229999804
+  },
+  "forced_reflection": {
+    "hallucination_rate": 0.18,
+    "hallucination_rate_ci": [
+      0.08,
+      0.28
+    ],
+    "grounding_score": 0.9333333333333333,
+    "grounding_score_ci": [
+      0.7692307692307693,
+      1.0
+    ],
+    "refusal_accuracy": 0.4666666666666667,
+    "refusal_accuracy_ci": [
+      0.2,
+      0.7272727272727273
+    ],
+    "correction_rate": 0.02,
+    "correction_rate_ci": [
+      0.0,
+      0.06
+    ],
+    "backfire_rate": 0.02,
+    "backfire_rate_ci": [
+      0.0,
+      0.06
+    ],
+    "confidence_calibration": null,
+    "mean_response_time_seconds": 40.08790119200014
+  },
+  "self_reflection": {
+    "hallucination_rate": 0.2,
+    "hallucination_rate_ci": [
+      0.1,
+      0.32
+    ],
+    "grounding_score": 1.0,
+    "grounding_score_ci": [
+      1.0,
+      1.0
+    ],
+    "refusal_accuracy": 0.3333333333333333,
+    "refusal_accuracy_ci": [
+      0.1,
+      0.5833333333333334
+    ],
+    "correction_rate": 0.02,
+    "correction_rate_ci": [
+      0.0,
+      0.06
+    ],
+    "backfire_rate": 0.0,
+    "backfire_rate_ci": [
+      0.0,
+      0.0
+    ],
+    "confidence_calibration": null,
+    "mean_response_time_seconds": 19.276429057999632
+  },
+  "verifier_reflection": {
+    "hallucination_rate": 0.22,
+    "hallucination_rate_ci": [
+      0.12,
+      0.34
+    ],
+    "grounding_score": 0.9333333333333333,
+    "grounding_score_ci": [
+      0.7777777777777778,
+      1.0
+    ],
+    "refusal_accuracy": 0.26666666666666666,
+    "refusal_accuracy_ci": [
+      0.058823529411764705,
+      0.5
+    ],
+    "correction_rate": 0.02,
+    "correction_rate_ci": [
+      0.0,
+      0.06
+    ],
+    "backfire_rate": 0.02,
+    "backfire_rate_ci": [
+      0.0,
+      0.06
+    ],
+    "confidence_calibration": null,
+    "mean_response_time_seconds": 40.13028070600034
+  }
+}

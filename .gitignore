@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+logs/
+results/*
+!results/raw_results.csv
+!results/iteration_results.csv
+!results/summary.json
+results/archive_8b_v1/

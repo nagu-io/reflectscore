@@ -1,0 +1,227 @@
+[
+  {
+    "id": "c1",
+    "question": "Which function handles user authentication in the codebase?",
+    "answer": "authenticate_user",
+    "category": "code",
+    "keywords": ["authenticate_user", "auth"],
+    "file_reference": "auth.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c2",
+    "question": "Which function validates bearer tokens?",
+    "answer": "validate_token",
+    "category": "code",
+    "keywords": ["validate_token", "token"],
+    "file_reference": "auth.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c3",
+    "question": "Which helper hashes raw passwords before comparison?",
+    "answer": "hash_password",
+    "category": "code",
+    "keywords": ["hash_password", "password"],
+    "file_reference": "auth.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c4",
+    "question": "Which function creates a session record after login?",
+    "answer": "create_session",
+    "category": "code",
+    "keywords": ["create_session", "session"],
+    "file_reference": "sessions.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c5",
+    "question": "Which function sends outbound email notifications?",
+    "answer": "send_email",
+    "category": "code",
+    "keywords": ["send_email", "email"],
+    "file_reference": "notifications.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c6",
+    "question": "Which class manages the database connection settings?",
+    "answer": "DatabaseConnection",
+    "category": "code",
+    "keywords": ["DatabaseConnection", "database"],
+    "file_reference": "database.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c7",
+    "question": "Which method opens the database connection?",
+    "answer": "connect",
+    "category": "code",
+    "keywords": ["connect", "database"],
+    "file_reference": "database.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c8",
+    "question": "Which class looks up users by username?",
+    "answer": "UserRepository",
+    "category": "code",
+    "keywords": ["UserRepository", "username"],
+    "file_reference": "repository.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c9",
+    "question": "Which function records security events to the audit log?",
+    "answer": "log_security_event",
+    "category": "code",
+    "keywords": ["log_security_event", "audit"],
+    "file_reference": "audit.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c10",
+    "question": "Which class represents a user session object?",
+    "answer": "SessionRecord",
+    "category": "code",
+    "keywords": ["SessionRecord", "session"],
+    "file_reference": "sessions.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c11",
+    "question": "Which helper creates a signed password reset token?",
+    "answer": "build_reset_token",
+    "category": "code",
+    "keywords": ["build_reset_token", "reset token"],
+    "file_reference": "auth.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c12",
+    "question": "Which file defines the Mailer class?",
+    "answer": "notifications.py",
+    "category": "code",
+    "keywords": ["Mailer", "notifications.py"],
+    "file_reference": "notifications.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c13",
+    "question": "Which function normalizes an email address before sending mail?",
+    "answer": "normalize_email",
+    "category": "code",
+    "keywords": ["normalize_email", "email"],
+    "file_reference": "notifications.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c14",
+    "question": "Which class writes audit entries to the console?",
+    "answer": "AuditLogger",
+    "category": "code",
+    "keywords": ["AuditLogger", "audit"],
+    "file_reference": "audit.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c15",
+    "question": "Which function fetches a database connection object for repositories?",
+    "answer": "get_db_connection",
+    "category": "code",
+    "keywords": ["get_db_connection", "database"],
+    "file_reference": "database.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c16",
+    "question": "Which file contains `authenticate_user`?",
+    "answer": "auth.py",
+    "category": "code",
+    "keywords": ["auth.py", "authenticate_user"],
+    "file_reference": "auth.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c17",
+    "question": "Which method executes SQL queries after ensuring a database connection?",
+    "answer": "execute",
+    "category": "code",
+    "keywords": ["execute", "database"],
+    "file_reference": "database.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c18",
+    "question": "Which constant prefixes reset tokens with a short label?",
+    "answer": "RESET_PREFIX",
+    "category": "code",
+    "keywords": ["RESET_PREFIX", "reset-"],
+    "file_reference": "auth.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c19",
+    "question": "Which constant stores the auth token secret setting name?",
+    "answer": "TOKEN_SECRET_NAME",
+    "category": "code",
+    "keywords": ["TOKEN_SECRET_NAME", "AUTH_TOKEN_SECRET"],
+    "file_reference": "auth.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c20",
+    "question": "Which method finds a user record by username inside the repository?",
+    "answer": "find_by_username",
+    "category": "code",
+    "keywords": ["find_by_username", "username"],
+    "file_reference": "repository.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c21",
+    "question": "Which method on AuditLogger writes the event details?",
+    "answer": "write",
+    "category": "code",
+    "keywords": ["write", "AuditLogger"],
+    "file_reference": "audit.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c22",
+    "question": "Which method on Mailer sends the final email payload?",
+    "answer": "send",
+    "category": "code",
+    "keywords": ["send", "Mailer"],
+    "file_reference": "notifications.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c23",
+    "question": "Which file defines the UserRepository class?",
+    "answer": "repository.py",
+    "category": "code",
+    "keywords": ["repository.py", "UserRepository"],
+    "file_reference": "repository.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c24",
+    "question": "Which file contains `create_session`?",
+    "answer": "sessions.py",
+    "category": "code",
+    "keywords": ["sessions.py", "create_session"],
+    "file_reference": "sessions.py",
+    "unanswerable": false
+  },
+  {
+    "id": "c25",
+    "question": "Which class is responsible for low-level email delivery?",
+    "answer": "Mailer",
+    "category": "code",
+    "keywords": ["Mailer", "email"],
+    "file_reference": "notifications.py",
+    "unanswerable": false
+  }
+]

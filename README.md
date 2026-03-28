@@ -4,6 +4,40 @@ ReflectScore is a reproducible benchmark for measuring how reflection agents aff
 
 The checked-in report, plots, and result artifacts in this repository correspond to the completed v1 benchmark run.
 
+## Published v1 Snapshot
+
+- Model: `llama-3.1-8b-instant` via Groq
+- Benchmark size: `50` questions
+- Categories: `20` factual, `15` code, `15` unanswerable
+- Primary artifact bundle: [`results/summary.json`](results/summary.json), [`results/raw_results.csv`](results/raw_results.csv), [`results/iteration_results.csv`](results/iteration_results.csv), [`report/benchmark_report.md`](report/benchmark_report.md)
+
+| System | Hallucination Rate | Grounding | Refusal | Backfire | Mean Latency (s) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| baseline | 0.220 | 1.000 | 0.267 | - | 5.413 |
+| confidence_reflection | 0.180 | 0.800 | 0.400 | 0.000 | 6.105 |
+| cross_agent | 0.180 | 0.933 | 0.400 | 0.020 | 21.794 |
+| forced_reflection | 0.180 | 0.933 | 0.467 | 0.020 | 40.088 |
+| self_reflection | 0.200 | 1.000 | 0.333 | 0.000 | 19.276 |
+| verifier_reflection | 0.220 | 0.933 | 0.267 | 0.020 | 40.130 |
+
+### v1 Takeaways
+
+- Confidence-triggered reflection matched the best hallucination rate in v1 while staying much faster than the heavier reflective systems.
+- Cross-agent reflection tied the best hallucination rate, but at a much higher latency cost.
+- Forced reflection improved refusal accuracy over baseline, but its latency penalty was large.
+- The stronger verifier design was added after v1 because verifier reflection did not outperform baseline in this first published run.
+
+## Figures
+
+<p align="center">
+  <img src="visualizations/leaderboard.png" alt="ReflectScore v1 leaderboard" width="48%">
+  <img src="visualizations/iteration_curve.png" alt="ReflectScore v1 iteration curve" width="48%">
+</p>
+<p align="center">
+  <img src="visualizations/failure_heatmap.png" alt="ReflectScore v1 failure heatmap" width="48%">
+  <img src="visualizations/confidence_plot.png" alt="ReflectScore v1 confidence calibration" width="48%">
+</p>
+
 ## What It Measures
 
 ReflectScore compares six systems:
@@ -116,17 +150,6 @@ python report/generate_report.py
 - v1: llama-3.1-8b-instant, Groq, 50 questions, completed
 - v2: llama-3.3-70b-versatile, Groq, blocked by rate limits
 - v3: gemini-2.0-flash, Google AI Studio, 80 questions, in progress
-
-## Sample Results Table
-
-| System | Hallucination Rate | Grounding | Refusal | Backfire | Mean Latency (s) |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Baseline | 0.32 | 0.45 | 0.20 | - | 1.12 |
-| Forced Reflection | 0.21 | 0.61 | 0.35 | 0.08 | 3.84 |
-| Confidence Reflection | 0.18 | 0.65 | 0.42 | 0.05 | 2.41 |
-| Self Reflection | 0.19 | 0.63 | 0.38 | 0.06 | 2.76 |
-| Cross-Agent Reflection | 0.14 | 0.71 | 0.55 | 0.04 | 4.22 |
-| Verifier Reflection | 0.07 | 0.88 | 0.90 | 0.02 | 5.09 |
 
 ## Notes
 

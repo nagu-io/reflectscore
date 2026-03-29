@@ -4,6 +4,11 @@ ReflectScore is a reproducible benchmark for measuring how reflection agents aff
 
 The checked-in report, plots, and result artifacts in this repository correspond to the completed v1 benchmark run.
 
+This repository should be read as a release-first benchmark repo:
+- the published benchmark artifacts in `results/`, `report/`, and `visualizations/` correspond to the completed v1 run
+- the tagged release [`v1`](https://github.com/nagu-io/reflectscore/tree/v1) is the reference point for that release
+- later provider experiments are follow-up implementation work and are not the source of the published v1 numbers
+
 ## Published v1 Snapshot
 
 - Model: `llama-3.1-8b-instant` via Groq
@@ -26,6 +31,16 @@ The checked-in report, plots, and result artifacts in this repository correspond
 - Cross-agent reflection tied the best hallucination rate, but at a much higher latency cost.
 - Forced reflection improved refusal accuracy over baseline, but its latency penalty was large.
 - The stronger verifier design was added after v1 because verifier reflection did not outperform baseline in this first published run.
+
+## What This Repo Represents
+
+ReflectScore currently serves two purposes:
+
+1. It preserves the complete published v1 benchmark artifact set.
+2. It remains an active codebase for follow-up backend and model experiments.
+
+If your goal is to inspect the published release, use the checked-in result artifacts or the [`v1`](https://github.com/nagu-io/reflectscore/tree/v1) tag.
+If your goal is to extend the benchmark, treat the runtime configuration on `main` as evolving implementation work rather than as the canonical definition of v1.
 
 ## Figures
 
@@ -81,7 +96,12 @@ reflectscore/
 pip install -r requirements.txt
 ```
 
-3. Add a real Google AI Studio key to `.env`:
+3. Configure a live LLM backend in `.env` before running new experiments.
+
+The published v1 artifacts were produced with Groq using `llama-3.1-8b-instant`.
+The runtime provider configuration on `main` may change over time as additional backends are tested.
+
+Example environment block:
 
 ```env
 GEMINI_API_KEY=your_key_here
@@ -149,12 +169,13 @@ python report/generate_report.py
 
 - v1: llama-3.1-8b-instant, Groq, 50 questions, completed
 - v2: llama-3.3-70b-versatile, Groq, blocked by rate limits
-- v3: gemini-2.0-flash, Google AI Studio, 80 questions, in progress
+- v3: provider migration experiments (Gemini / OpenRouter), implementation work only, not a completed published run
 
 ## Notes
 
 - Runs are seeded with `SEED=42` for reproducibility.
 - Confidence intervals use seeded bootstrap resampling with 1000 draws.
 - All LLM requests flow through `systems/llm.py`.
-- The benchmark does not include any runtime mock LLM mode. A real Google AI Studio API key is required for live execution.
+- The benchmark does not include any runtime mock LLM mode.
+- The checked-in CSV, JSON, plots, and report files are the authoritative v1 release artifacts.
 - The iteration curve is computed from `forced_reflection` snapshots so the plot reflects one consistent iterative policy instead of mixing heterogeneous systems.
